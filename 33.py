@@ -1,6 +1,6 @@
-q=input()
+a=input()
 c=0
-for i in range(0,len(q)):
-	if q[i]==" ":
+for i in range(0,len(a)):
+	if a[i]==" ":
 		c=c+1
 print(c)
