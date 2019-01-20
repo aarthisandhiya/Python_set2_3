@@ -1,2 +1,2 @@
 y=input().split()
-print(len(y-1))
+print(len(y))
