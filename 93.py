@@ -1,3 +1,3 @@
-z=float(input())
-y=z+273.15
+z=int(input())
+y=(int)(z+273.15)
 print(y)
