@@ -6,9 +6,10 @@ for i in range(0,len(b)):
         s.append(b[i])
     elif i%2==1 and b[i]%2==0:
         s.append(b[i])
-        
-for i in s:
-    print(i,end=" ")
+w=' '        
+for i in range(0,len(s)):
+    w=w+str(s[i])+' '
+print(w.strip())
 
         
 
