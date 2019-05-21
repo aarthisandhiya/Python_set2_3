@@ -1,10 +1,10 @@
 a=input()
 s=""
 c=0
-for i in range(0,len(a)):
+for i in range(len(a)):
     if a[i]==" ":
         s=s+a[i]
-    elif  c%2==0:
+    elif  c%2!=0:
         s=s+a[i]
         c=c+1 
     else:
