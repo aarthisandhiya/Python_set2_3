@@ -1,11 +1,14 @@
 a=input()
-s=[]
+s=""
+c=0
 for i in range(0,len(a)):
-    if i%2!=0:
-        s.append(a[i])
+    if a[i]==" ":
+        s=s+a[i]
+    elif  c%2==0:
+        s=s+a[i]
+        c=c+1 
     else:
-        d=a[i].upper()
-        s.append(d)
-for i in range(0,len(s)):
-    print(s[i],end="")
+        s=s+a[i].upper()
+        c=c+1
+print(s)
     
