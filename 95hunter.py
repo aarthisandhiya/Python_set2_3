@@ -1,9 +1,23 @@
-a=int(input())
-if a==2:
-    print(0)
-for i in range(2,a):
-    for j in range(2,i):
-        if i%j==0:
-            break
+import math
+def isprime(y):
+    if(y==2):
+        return True
+    elif(y%2 == 0):
+        return False
     else:
-        print(i,end=" ")
+        for j in range(2,int(math.sqrt(y)+1)):
+            if(y%j == 0):
+                return False
+        return True
+n = int(input(""))
+prime = []
+for i in range(2,n):
+    if(isprime(i)):
+        prime.append(i)
+if(len(prime)>0):
+    if(prime[-1] == 97):
+        print(" ".join(map(str,prime)),"")
+    else:
+        print(" ".join(map(str,prime)))
+else:
+    print(0)
