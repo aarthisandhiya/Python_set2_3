@@ -5,5 +5,6 @@ k=max(b)
 for i in range(0,len(b)):
     if b[i]==s:
         print(i+1,end=" ")
-    elif b[i]==k:
+for i in range(0,len(b)):
+    if b[i]==k:
         print(i+1,end=" ")
