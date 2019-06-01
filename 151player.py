@@ -1,9 +1,11 @@
-a=input()
-c=0
-for i in range(0,len(a)):
-    if a[i]=='a' or a[i]=='b':
-        c=c+1
-if c==len(a) or c==len(a)-1:
-    print("yes")
+a,b=map(str,input().split())
+b=int(b)
+s=[]
+if len(a)==1:
+    print(a)
 else:
-    print("no")
+    for i in range(0,len(a)):
+        if i%2==1:
+            s.append(a[i])
+        
+    print(*s)
