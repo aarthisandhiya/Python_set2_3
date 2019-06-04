@@ -12,3 +12,6 @@ for i in range(0,len(c)-1):
     elif c[i]==b and i>1:
         print(c[i-1],c[i+1],c[i-2])
         break
+else:
+    if c[-1]==b:
+        print(c[-2],c[-3],c[-4])
