@@ -7,7 +7,7 @@ for i in range(0,len(b)-1):
     else:
         print("-1",end=" ")
 else:
-    if b[-1]>b[0]:
+    if b[-1]<b[0]:
         print(b[-1])
     else:
         print("-1")
